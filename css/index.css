@@ -74,6 +74,10 @@ footer {
     color: #b4b4b4;
 }
 
+.green-letter {
+    color: #039057;
+}
+
 /* Mobile styles*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
