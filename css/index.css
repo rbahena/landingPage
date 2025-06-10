@@ -74,4 +74,30 @@ footer {
     color: #b4b4b4;
 }
 
+/* Mobile styles*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .footer-menu {
+        text-align: center;
+        margin-bottom: 23px;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+
+    }
+
+    .footer-menu ul {
+        width: 100%;
+        display: block;
+        list-style-type: none;
+    }
+
+    .footer-menu ul li {
+        margin-right: 0;
+        margin-bottom: 1px;
+    }
+}
+
+
 /* end footer styles */
