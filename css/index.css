@@ -4,7 +4,14 @@
 
 @font-face {
     font-family: 'roboto';
-    src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf);
+    src: url(../fonts/Roboto.ttf);
+}
+
+@font-face {
+    font-family: 'monserrat';
+    src: url(../fonts/Montserrat.ttf);
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -19,11 +26,126 @@ body {
 .border {
     text-align: center;
     width: 100%;
-    height: 150px;
+    height: auto;
     border-color: red;
     border-style: solid;
 }
 
+/* start contact form styles*/
+
+.contac-section {
+    background-color: #f7f7f7;
+}
+
+.contact-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    flex-wrap: wrap;
+}
+
+.contact-text,
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-text h1 {
+    font-family: 'monserrat';
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.form-body {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 100%;
+}
+
+.form-body h2 {
+    text-align: center;
+    font-family: 'monserrat';
+    color: #333;
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #555;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+    font-family: sans-serif;
+    /* o usa 'Arial', 'Roboto', etc. */
+    font-size: 16px;
+    color: #333;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #039057;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #039057;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #026d42;
+}
+
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-body {
+        padding: 20px;
+    }
+
+    .contact-text {
+        text-justify: inter-word;
+    }
+}
 
 /* start footer styles */
 
@@ -67,6 +189,12 @@ footer {
 
 .footer-menu ul li {
     margin-right: 30px;
+}
+
+.footer-menu ul li a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: inherit;
 }
 
 .footer-copyright {
