@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina principal</title>
     <link rel="stylesheet" href="../css/index.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('ur75mi6BZhPfQJswM')</script>
 </head>
 
 <body>
@@ -38,12 +41,43 @@
     </section>
 
     <!-- 5ta sección: formulario -->
-    <section>
-        <div class="border">
-            <p>Formulario</p>
+    <section id="contact" class="contac-section">
+        <div class="contact-wrapper">
+            <div class="contact-section">
+
+                <div class="contact-text">
+                    <h1><strong class="green-letter">Permítenos</strong> ayudarte a hacer realidad tu proyecto</h1>
+                    <p>
+                        Queremos conocer tu proyecto y saber cómo podemos ayudarte a desarrollarlo.
+                        Somos un equipo de desarrolladores con experiencia, apasionados por convertir buenas ideas en
+                        soluciones reales.<br>
+                        Cuéntanos en qué estás trabajando y juntos encontraremos la mejor forma de hacerlo crecer.
+                    </p>
+                </div>
+
+                <div class="contact-form">
+                    <div class="form-body">
+                        <h2>Cuéntanos sobre tu proyecto</h2>
+                        <form id="contact-form">
+                            <label for="name">Nombre completo:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="number">Número de WhatsApp:</label>
+                            <input type="tel" id="number" name="number" required>
+
+                            <label for="idea">Cuéntanos sobre tu proyecto:</label>
+                            <textarea id="idea" name="idea" rows="5" required></textarea>
+
+                            <input type="submit" id="form-button" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
+    <!-- 6ta sección: footer Ramiro -->
     <footer>
         <div class="footer-logo">
             <img src="../images/logo.png" alt="logo">
@@ -56,14 +90,14 @@
                 <li>Beneficios</li>
                 <li>Testimonios</li>
                 <li>Nuestros costos</li>
-                <li>Contactanos</li>
+                <li><a href="#contact"> Contactanos</a></li>
             </ul>
         </div>
         <div class="footer-copyright">
-            <p>copyright 2024 all rights © reserved</p>
+            <p>copyright 2025 all rights © reserved</p>
         </div>
     </footer>
-    <!-- 6ta sección: footer Ramiro -->
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
