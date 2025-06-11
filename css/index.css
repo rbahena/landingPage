@@ -40,14 +40,14 @@ body {
 .contact-wrapper {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .contact-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 200px;
+    gap: 150px;
     flex-wrap: wrap;
 }
 
@@ -144,6 +144,10 @@ input[type="submit"]:hover {
 
     .contact-text {
         text-justify: inter-word;
+    }
+
+    .contact-section {
+        gap: 50px;
     }
 }
 
