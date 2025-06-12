@@ -24,11 +24,48 @@
     </section>
 
     <!-- 3ra sección: testimonios o información de relleno Mirian -->
-    <section>
-        <div class="border">
-            <p>Testimonios</p>
+<section id="testimonios">
+    <div class="testimonial-slider">
+        <!-- Testimonio 1 -->
+        <div class="testimonial-content">
+            <div class="quote-icon">Clientes Satisfechos</div>
+            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="testimonial-user">
+                <img src="imagenes/giff.gif" alt="User GIF" class="testimonial-avatar">
+                <h3 class="testimonial-name">John Doe</h3>
+                <p class="testimonial-role">UI Design</p>
+            </div>
         </div>
-    </section>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonial-content">
+            <div class="quote-icon">Clientes Satisfechos</div>
+            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="testimonial-user">
+                <img src="imagenes/giff.gif" alt="User GIF" class="testimonial-avatar">
+                <h3 class="testimonial-name">Jane Smith</h3>
+                <p class="testimonial-role">Marketing Manager</p>
+            </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="testimonial-content">
+            <div class="quote-icon">Clientes Satisfechos</div>
+            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="testimonial-user">
+                <img src="imagenes/giff.gif" alt="User GIF" class="testimonial-avatar">
+                <h3 class="testimonial-name">Carlos Ruiz</h3>
+                <p class="testimonial-role">Desarrollador Web</p>
+            </div>
+        </div>
+
+        <div class="testimonial-navigation">
+            <button class="nav-btn left">←</button>
+            <button class="nav-btn right">→</button>
+        </div>
+    </div>
+</section>
+
 
     <!-- 4ta sección: costos y cotizaciones Omar -->
     <section>
@@ -50,6 +87,45 @@
         </div>
     </footer>
     <!-- 6ta sección: footer Ramiro -->
+
+
+
+
+    <script>
+    const testimonials = document.querySelectorAll('.testimonial-content');
+    const leftBtn = document.querySelector('.nav-btn.left');
+    const rightBtn = document.querySelector('.nav-btn.right');
+    let current = 0;
+
+    function showTestimonial(index) {
+        testimonials.forEach((t, i) => {
+            t.classList.toggle('active', i === index);
+        });
+    }
+
+    leftBtn.addEventListener('click', () => {
+        current = (current - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(current);
+    });
+
+    rightBtn.addEventListener('click', () => {
+        current = (current + 1) % testimonials.length;
+        showTestimonial(current);
+    });
+
+    showTestimonial(current);
+</script>
+
+<!-- Estilos sugeridos para ocultar los testimonios no activos -->
+<style>
+    .testimonial-content {
+        display: none;
+    }
+
+    .testimonial-content.active {
+        display: block;
+    }
+</style>
 </body>
 
 </html>
