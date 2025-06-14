@@ -5,15 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+   
 </head>
 
 <body>
-    <!-- 1ra sección: tipos de servicios que hacemos Richart -->
+ <section class="services-section">
+  <div class="services-content">
+    <!-- Left: Text Content -->
+    <div class="services-text">
+      <h1><span class="highlight">Nuestros</span> Servicios</h1>
+      <p>
+        Soluciones hechas a medida para ayudarte a hacer crecer tu negocio. Nos enfocamos en el impacto, la velocidad y la experiencia del usuario.
+      </p>
+      <ul>
+        <li>✅ <strong>Desarrollo Web:</strong> Sitios web responsivos y de alto rendimiento.</li>
+        <li>📈 <strong>Optimización SEO:</strong> Mejora tu visibilidad y tráfico orgánico.</li>
+        <li>🎨 <strong>Diseño UI/UX:</strong> Interfaces atractivas que convierten visitantes en clientes.</li>
+        <li>⚙️ <strong>Automatización:</strong> Integramos herramientas para aumentar tu eficiencia.</li>
+      </ul>
+      <a href="#contact" class="btn-contact">Contáctanos</a>
+    </div>
+
+    <!-- Right: Carousel -->
+    <div class="carousel-container">
+      <div id="carouselImages" class="carousel-images">
+        <img src="../images/web-design.png" alt="Servicio 1" />
+        <img src="../images/ux-design.png" alt="Servicio 2" />
+        <img src="../images/seo.png" alt="Servicio 3" />
+        <img src="../images/automation.png" alt="Servicio 4" />
+      </div>
+      <button class="carousel-btn left" onclick="prevSlide()">←</button>
+      <button class="carousel-btn right" onclick="nextSlide()">→</button>
+    </div>
+  </div>
+</section>
     <!-- 2da sección: beneficios de cotratarnos Arturo -->
     <!-- 3ra sección: testimonios o información de relleno Mirian -->
     <!-- 4ta sección: costos y cotizaciones Omar -->
     <!-- 5ta sección: formulario -->
     <!-- 6ta sección: footer Ramiro -->
+     <script src="../js/index.js"></script>
 </body>
 
 </html>
