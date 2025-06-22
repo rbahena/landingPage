@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -16,7 +15,7 @@ body {
     min-height: 100vh;
 }
 
-.border{
+.border {
     text-align: center;
     width: 100vw;
     height: 150px;
@@ -24,125 +23,80 @@ body {
     border-style: solid;
 }
 
-.seccion{
-    padding: 50px;
-    color: rgb(0, 0, 0);
-    background-image: radial-gradient(#a4e1e6, #f5f5f5);
-width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;  /* Centra horizontalmente */
-  align-items: center;      /* Centra verticalmente */
-  text-align: center;
-}
 
-.border_beneficios {
-    text-align: center;
-    width: 100%;
-    height: 700px;
-}
-
-.contenedor_principal { /*Contenedor guarda titulo y parrafo 1*/
+.description_subtitle h1{
     display: flex;
-    width: vw;
-    max-width: 1600px;
-    margin-bottom: 40px;
-}
-
-.titulo_izquierda {  
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 30px;
-}
-
-.titulo_principal {
-    font-size: 60px;
-    color: #333;
-    margin: 0;
-    padding: 20px 40px;
-    border-radius: 12px;
-    display: inline-block;
-}
-
-.texto_derecha {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 30px;
-
-}
-
-.parrafo_descripcion {
-    font-family: "Dosis", sans-serif;
-    font-size: 1.9rem;
-    color: #444;
+    margin-top: 90px;
+    margin-left: 200px;
     text-align: justify;
+    width: 600px;  
+    font-size: 30px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.description_subtitle p{
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    font-size: 22px;
+    color: #666;
+    line-height: 1.6;
 }
 
 .beneficios {
+ 
     display: flex;
     gap: 60px;
     width: 80vw;
     max-width: 1400px;
-    justify-content: center;
+    justify-content:center;
     height: 380px;
+    margin: auto;
+    margin-bottom: 100px;
 }
+
+
 
 .beneficio {
     border-radius: 10px;
-    background: linear-gradient(90deg, #f3f4f8 0%, #e0e7ff 100%);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    box-shadow: none;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    padding-top: 48px;
-    flex: 1;
     min-width: 200px;
     position: relative;
 }
 
-.texto_beneficios {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color: #303030;
-    margin: 0;
-    text-align: center;
-    font-size: 1.2rem;
-
-}
-
 .beneficio img {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: 12px;
-    left: 12px;
+   width: 120px;
 }
 
-.titulos_beneficios {
-    color: #0078d7;
+.beneficio h1{
+    color: #039057;
     margin-top: 90px;
 }
 
-.segundo_titulo {
-    margin-top: 110px;
+.beneficio p{
+    color: #001D12;
+
 }
 
-.titulo-secundario {
-    margin-top: 80px;
-    color: #c6d4d7;
-    font-size: 2rem;
-    text-align: center;
+.beneficio:hover {
+    transform: scale(1.2);
 }
 
-.segundo_titulo {
+
+
+
+
+
+
+
+.bottom_secc {
     width: 100vw;
-    background: #5371a6;
-    padding: 40px 0 24px 0;
+    background: #1A544E;
+    padding: 100px 0 24px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,24 +104,20 @@ width: 100vw;
     margin-bottom: 32px;
 }
 
-.segundo_tituloh1 {
-    font-size: 2.5rem;
+
+.bottom_secc h1{
+    font-size: 2rem;
     color: #dcdcdc;
     margin: 0 0 12px 0;
     text-align: center;
 
 }
-
-.segundo_parrafo {
+.bottom_secc p{
     font-family: "Dosis", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #d8d8d8;
     margin: 0;
     text-align: center;
-    font-size: 1.9rem;
-
 }
-
-
 
 
